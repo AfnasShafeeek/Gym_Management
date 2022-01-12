@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Client Registration</title>
+    <title>Trainer Registration</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/client_reg.css">
+        <link rel="stylesheet" href="css/trainer_reg.css">
 </head>
 <body>
     <div class="container">
@@ -16,7 +16,7 @@
         <div align="center" class="row">
             <div class="col-lg-12">
               <div class="header">
-                <h1> <b>CLIENT REGISTRATION</b></h1>
+                <h1> <b>TRAINER  REGISTRATION</b></h1>
               </div>
             </div>
         </div>
@@ -25,8 +25,8 @@
 
         <div class="row">
             <div class="col-lg-12">
-             <div  class="form">
-                 <form action="insert.php" method="POST" name="reg_form" id="reg_form" class="p-3">
+             <div  class="form p-3">
+                 <form action="trn_insert.php" method="POST" name="reg_form" id="reg_form" class="p-4 pt-3 pb-3">
                      <div class="form-group">
 
                      <label for="id" class="label mr-3"> ID :</label>
@@ -85,13 +85,18 @@
                       <input type="radio" name="gender" id="gender" class="radio" value="Female">
                      </div>
                      <br>
-
-                     <p style="font-style: italic; color: azure;">monthly fee General : 780/- </p> 
-                     <p style="font-style: italic; color: azure;">monthly fee personel : 3800/- </p> 
+ 
                     
                      <div class="form-group">
-                     <label for="fee" class="label"> Fee :</label><p style="font-style: italic; color: azure;">(monthly)</p>
-                      <input type="text" name="fee" id="fee" class="data" placeholder="">
+                     <label for="fee" class="label"> Salary :</label>
+                      <input type="text" name="wage" id="wage" class="data" placeholder="">
+                     </div>
+                     <br>
+
+                     
+                     <div class="form-group">
+                     <label for="fee" class="label"> Account Number :</label>
+                      <input type="text" name="acc_num" id="acc_num" class="data" placeholder="Account Number">
                      </div>
                      <br>
                      
@@ -103,7 +108,10 @@
                       </select>
                      </div>
                      <br>
-                   <button name="register" class="btn btn-primary  btn-lg" id="button">REGISTER</button>
+                    <input type="checkbox" class="terms" name="terms" id="terms"><label for="terms">Accept all terms and conditon of the health club</label>
+                    <br>
+                    <br>
+                    <button name="register" class="btn btn-light  btn-lg" id="button">REGISTER</button>
 
                  </form>
              </div>

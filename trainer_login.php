@@ -4,7 +4,7 @@
     </head>
     <link rel="stylesheet" href="css/login_trainer.css">
     <body>
-        <div class="form">
+        <div class="form" align="center">
         <form action="" method="POST" name="Login_form" id="login_form">
             <h1>CMENZ HEALTH CLUB</h1>
             <h1 class="log">LOGIN</h1>

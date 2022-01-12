@@ -3,11 +3,7 @@ body{
     background-size: cover;
     
 }
-form{
-    
-    padding: 10rem;
-  
-}
+
 .form{
     display: block;
     text-align: center;
@@ -52,11 +48,7 @@ input.data:hover{
 
 @media only screen and (max-width:992px)  {
 
-    form{
     
-        padding: 5rem;
-      
-    }
     
     .form{
         display: block;
@@ -103,11 +95,8 @@ input.data:hover{
 
 @media only screen and (max-width:788px)  {
 
-    form{
-    
-        padding: 2rem;
+   
       
-    }
     
     .form{
         display: block;
