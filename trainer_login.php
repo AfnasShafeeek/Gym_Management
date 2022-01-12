@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/login_trainer.css">
     <body>
         <div class="form">
-        <form action="">
+        <form action="" method="POST" name="Login_form" id="login_form">
             <h1>CMENZ HEALTH CLUB</h1>
             <h1 class="log">LOGIN</h1>
             <label for="name" style=" font-size: 1.65rem; margin-right: 1.2rem;font-weight: bold ;">ID : </label>

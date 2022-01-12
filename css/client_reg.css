@@ -1,0 +1,21 @@
+.header{
+    font-family: 'Times New Roman', Times, serif;
+   
+    font-size:1.7rem;
+}
+#reg_form{
+    background-color:darkcyan;
+    color: azure;
+    font-family: 'Times New Roman';
+
+}
+.label{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.form-group{
+    
+}
+.data{
+   
+}

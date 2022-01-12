@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/login_admin.css">
     <body>
         <div class="form">
-        <form action="">
+        <form action="" method="POST" name="Login_form" id="login_form">
             <h1 class="log">LOGIN</h1>
             <label for="name" style=" font-size: 1.65rem; margin-right: 1.2rem;font-weight: bold">USER NAME : </label>
             <input type="text" name="name" class="data" placeholder="Username">
