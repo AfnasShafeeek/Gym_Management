@@ -7,13 +7,13 @@ $mail=$_POST['mail'];
 $password=$_POST['password'];
 $phone=$_POST['phone'];
 $age=$_POST['age'];
-$adress=$_POST['address'];
+$address=$_POST['address'];
 $gender=$_POST['gender'];
 $wage=$_POST['wage'];
 $acc_num=$_POST["acc_num"];
 $time=$_POST['time'];
-$sql="insert into client_details values('$id','$name','$user_name','$mail','$password',$phone,$age,'$address','$gender',$wage,$acc_num,'$time')";
+$sql="insert into trainer_details values('$id','$name','$user_name','$mail','$password',$phone,$age,'$address','$gender',$wage,$acc_num,'$time')";
 mysqli_query($dbcon,$sql);
 echo mysqli_error($dbcon);
-header("location:admin_home.php");
+header("location:trainer_details.php");
 ?>

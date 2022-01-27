@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Add</title>
+    <title>Diet Add</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/plan.css">
@@ -15,7 +15,7 @@
    
      <form  action="trn_insert.php" method="POST" name="reg_form" id="reg_form" class="form p-4 pt-4 m-4 mx-auto my-auto"> 
      <div class="header">
-        <h1 class="title mx-auto m-4">ADD WORKOUT</h1>
+        <h1 class="title mx-auto m-4">ADD DIET PLAN</h1>
       </div>
   <div class="form-group p-4">
   <h5>Trainer ID :</h5>
@@ -24,11 +24,11 @@
 
   <div class="form-group p-4">
     <h5>Plan ID :</h5>
-    <input type="text"class="form-control" id="wrk_id" name="wrk_id" value="WRK ">
+    <input type="text"class="form-control" id="wrk_id" name="wrk_id" value="DIT ">
   </div>
 
   <div class="form-group p-4">
-    <h5>Workout :</h5>
+    <h5>Diet Plan :</h5>
     <input type="file" class="form-control" id="workout" name="workout">
   </div>
 <br>

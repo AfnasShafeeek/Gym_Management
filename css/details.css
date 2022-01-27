@@ -1,0 +1,15 @@
+body{
+    background-image: url("https://vincennesymca.org/wp-content/uploads/2020/03/Gym-Background.png");
+    background-size: cover;
+}
+.head h1{
+  
+}
+.text-center{
+    color: white;
+    background-color: rgb(20, 20, 20);
+    font-weight: bold;
+}
+tbody{
+    background-color: azure;
+}

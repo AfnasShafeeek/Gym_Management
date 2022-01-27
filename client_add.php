@@ -30,7 +30,7 @@
                      <div class="form-group">
 
                      <label for="id" class="label mr-3"> ID :</label>
-                      <input type="text" name="id" class="data" id="id" placeholder="">
+                      <input type="text" name="id" class="data" id="id" value="CLT ">
                      </div>
                      <br>
                    
@@ -57,7 +57,7 @@
                      <label for="password" class="label"> Password :</label>
                       <input type="password" name="password" id="password" class="data" placeholder="Password">
                      </div>
-                     <br>
+                 `    <br>
 
                      <div class="form-group">
                      <label for="phone" class="label"> Phone Number :</label>
@@ -73,7 +73,7 @@
 
                      <div class="form-group">
                      <label for="id" class="label"> Address :</label><br>
-                     <textarea name="" id="address" name="address" cols="30" rows="10" placeholder="Full address"></textarea>
+                     <textarea id="address" name="address" cols="30" rows="10" placeholder="Full address"></textarea>
                      </div>
                      <br>
 
@@ -103,7 +103,11 @@
                       </select>
                      </div>
                      <br>
-                   <button name="register" class="btn btn-primary  btn-lg" id="button">REGISTER</button>
+                     <div class="form-group">
+                     <button name="register" class="btn btn-primary  btn-lg" id="button">REGISTER</button>
+                     <input type="reset" class="btn btn-light btn-lg" value="RESET">
+                     </div>
+                   
 
                  </form>
              </div>

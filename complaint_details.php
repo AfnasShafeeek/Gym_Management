@@ -4,42 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Add</title>
+    <title>Complaints</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/plan.css">
 </head>
 <body>
-    <div class="container">
-     <div class="row p-4 m-4">
-   
-     <form  action="trn_insert.php" method="POST" name="reg_form" id="reg_form" class="form p-4 pt-4 m-4 mx-auto my-auto"> 
-     <div class="header">
-        <h1 class="title mx-auto m-4">ADD WORKOUT</h1>
-      </div>
-  <div class="form-group p-4">
-  <h5>Trainer ID :</h5>
-    <input type="text"class="form-control" id="trn_id" name="trn_id" value="TRN ">
-  </div>
-
-  <div class="form-group p-4">
-    <h5>Plan ID :</h5>
-    <input type="text"class="form-control" id="wrk_id" name="wrk_id" value="WRK ">
-  </div>
-
-  <div class="form-group p-4">
-    <h5>Workout :</h5>
-    <input type="file" class="form-control" id="workout" name="workout">
-  </div>
-<br>
-<br>
-  <button type="submit" class="btn btn-light btn-lg p-3 mt-4 mb-4">Add Plan</button>
-</form>
- 
-     </div>
+<div class="head p-4" align="center"> 
+       <h1 class="m-4 "> <b> COMPLAINTS </b> </h1>
     </div>
+    <table class="table p-2 m-4 table-hover" border="2px">
+        <thead class="thead-dark">
+        <th class="text-center p-3">CLIENT ID</th>
+        <th class="text-center p-3" style="font-weight: bold;">COMPLAINTS</th>
+        </thead>
+        <tbody >
+        <?php
+        $dbcon = mysqli_connect("localhost","root","","gym_management");
+        $sql = "SELECT * FROM complaints;";
+       $result=mysqli_query($dbcon,$sql);
+        $resultcheck=mysqli_num_rows($result);
+        while($row=mysqli_fetch_assoc($result)){
+     ?>    
+         <tr>
+         <td><?php echo $row['id'];?></td>
+         <td><?php echo $row['complaint'];?></td>
+         </tr>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        </tbody>
+        <?php } ?>
+    </table>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -49,5 +45,4 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4569682fd7.js" crossorigin="anonymous"></script>
-</body>
 </html>

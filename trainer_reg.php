@@ -30,7 +30,7 @@
                      <div class="form-group">
 
                      <label for="id" class="label mr-3"> ID :</label>
-                      <input type="text" name="id" class="data" id="id" placeholder="">
+                      <input type="text" name="id" class="data" id="id" value="TRN ">
                      </div>
                      <br>
                    
@@ -73,11 +73,12 @@
 
                      <div class="form-group">
                      <label for="id" class="label"> Address :</label><br>
-                     <textarea name="" id="address" name="address" cols="30" rows="10" placeholder="Full address"></textarea>
+                     <textarea  id="address" name="address" cols="30" rows="10" placeholder="Full address"></textarea>
                      </div>
                      <br>
 
                      <div class="form-group">
+                  
                      <label for="gender" class="label"> Male :</label>
                       <input type="radio" name="gender" id="gender" class="radio"  value="Male">
                       <br>
@@ -111,7 +112,11 @@
                     <input type="checkbox" class="terms" name="terms" id="terms"><label for="terms">Accept all terms and conditon of the health club</label>
                     <br>
                     <br>
+                    <div class="form-group">
                     <button name="register" class="btn btn-light  btn-lg" id="button">REGISTER</button>
+                    <input type="reset" class="btn btn-light btn-lg" value="RESET">
+                    </div>
+                 
 
                  </form>
              </div>

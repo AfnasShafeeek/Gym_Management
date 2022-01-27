@@ -105,7 +105,7 @@
 
   <div class="row mt-4 ml-4">
        <div class="col-lg-11 p-3">
-       <a href="compaint_details.php" style="text-decoration: none;">
+       <a href="complaint_details.php" style="text-decoration: none;">
            <div class="details p-2">
             <h2>Complaints</h2>
            </div>

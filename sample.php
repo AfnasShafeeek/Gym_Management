@@ -1,44 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Add</title>
+    <title>sample</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/plan.css">
 </head>
 <body>
-    <div class="container">
-     <div class="row p-4 m-4">
-   
-     <form  action="trn_insert.php" method="POST" name="reg_form" id="reg_form" class="form p-4 pt-4 m-4 mx-auto my-auto"> 
-     <div class="header">
-        <h1 class="title mx-auto m-4">ADD WORKOUT</h1>
-      </div>
-  <div class="form-group p-4">
-  <h5>Trainer ID :</h5>
-    <input type="text"class="form-control" id="trn_id" name="trn_id" value="TRN ">
-  </div>
-
-  <div class="form-group p-4">
-    <h5>Plan ID :</h5>
-    <input type="text"class="form-control" id="wrk_id" name="wrk_id" value="WRK ">
-  </div>
-
-  <div class="form-group p-4">
-    <h5>Workout :</h5>
-    <input type="file" class="form-control" id="workout" name="workout">
-  </div>
-<br>
-<br>
-  <button type="submit" class="btn btn-light btn-lg p-3 mt-4 mb-4">Add Plan</button>
-</form>
- 
-     </div>
+    <div class="Add m-4 p-4" align="right">
+        <a href="client_add.php" style="text-decoration: none;">
+    <button class="btn btn-primary">Add Member</button>
+       </a>
     </div>
-
+    <table class="table m-3" border="1px" >
+        <thead>
+            <tr>
+                <th>Sn</th>
+                <th>Name</th>
+                <th colspan="2">Email</th>
+                <th rowspan="2">Phone</th>
+        </thead>
+        <tbody>
+        <?php
+        $dbcon = mysqli_connect("localhost","root","","sample1");
+    $sql = "SELECT * FROM contacts;";
+    $result=mysqli_query($dbcon,$sql);
+    $resultcheck=mysqli_num_rows($result);
+        while($row=mysqli_fetch_assoc($result)){
+   ?>   
+   <tr>
+       <td><?php echo $row['Sn'];?></td>
+       <td><?php echo $row['Name'];?></td>
+       <td><?php echo $row['Email'];?></td>
+       <td></td>
+       <td><?php echo $row['Phone'];?></td>
+   </tr>
+    
+     
+   <?php } ?>
+        </tbody>
+   
+    </table>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

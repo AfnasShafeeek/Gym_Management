@@ -4,41 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Add</title>
+    <title>Remove Trainer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/plan.css">
 </head>
 <body>
     <div class="container">
-     <div class="row p-4 m-4">
-   
-     <form  action="trn_insert.php" method="POST" name="reg_form" id="reg_form" class="form p-4 pt-4 m-4 mx-auto my-auto"> 
-     <div class="header">
-        <h1 class="title mx-auto m-4">ADD WORKOUT</h1>
+     <div class="row m-4 p-4">
+     <form action="trn_del.php" method="POST" class="form-horizontal mx-auto p-4 m-3 bg-light pt-4"  id="form">
+
+     <div class="head m-4 pt-3">
+           <h1 id="head" ><b>REMOVE TRAINER</b></h1>
       </div>
-  <div class="form-group p-4">
-  <h5>Trainer ID :</h5>
-    <input type="text"class="form-control" id="trn_id" name="trn_id" value="TRN ">
+
+               
+  <div class="form-group">
+   <h4>ID</h4>
+    <input type="text" class="form-control" id="id" name="id" aria-describedby="Help" placeholder="ID" value="TRN ">
+    <small id="Help" class="form-text text-muted">Enter ID of trainer to be remove.</small>
   </div>
 
-  <div class="form-group p-4">
-    <h5>Plan ID :</h5>
-    <input type="text"class="form-control" id="wrk_id" name="wrk_id" value="WRK ">
+  <div class="form-group">
+  <h4>USER NAME</h4>
+    <input type="text" class="form-control" id="u_name" name="u_name" placeholder="User Name">
   </div>
 
-  <div class="form-group p-4">
-    <h5>Workout :</h5>
-    <input type="file" class="form-control" id="workout" name="workout">
-  </div>
-<br>
-<br>
-  <button type="submit" class="btn btn-light btn-lg p-3 mt-4 mb-4">Add Plan</button>
+   <div class="form-group p-3" >
+       <button class="btn btn-danger btn-lg">Remove</button>
+    
+   </div>  
 </form>
- 
      </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
