@@ -12,7 +12,7 @@
 <body>
  <div class="container">
      <div class="form">
-     <form action = "" method = "post" class="mt-4 p-4 bg-light" >
+     <form action = "sample_log.php" method = "post" class="mt-4 p-4 bg-light" >
          <div class="form-group display-3">
            <p><b>LOGIN</b></p>
  
@@ -20,21 +20,21 @@
 
   <div class="form-group"> 
     <label for="id"><h4>ID</h4></label>
-    <input type="text" class="form-control" id="id" value="TRN " placeholder="Trainer ID" > 
+    <input type="text" class="form-control" id="id" name="id" value="TRN " placeholder="Trainer ID" > 
   </div>
 
   <div class="form-group">
     <label for="user_name"><h4>USER NAME</h4></label>
-    <input type="text" class="form-control" id="user_name"  placeholder="User name" >  
+    <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User name" >  
   </div>
 
   <div class="form-group">
     <label for="Password"><h4>PASSWORD</h4></label>
-    <input type="password" class="form-control" id="Password" placeholder="Password">
+    <input type="password" class="form-control" id="Password" name="password" placeholder="Password">
   </div>
   <br>
   <br>
-  <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+  <button type="submit" class="btn btn-danger btn-lg" id="submit" name="submit">Submit</button>
 </form>
      </div>
  </div>

@@ -2,14 +2,14 @@
 $dbcon = mysqli_connect("localhost","root","","gym_management");
 if(isset($_POST['submit'])){
     $id = $_POST['trn_id'];
-    $wrk_id= $_POST['wrk_id'];    
-    $_file=$_FILES['workout'];
+    $diet_id= $_POST['diet_id'];    
+    $_file=$_FILES['diet'];
 
-    $fileName=$_FILES['workout']['name'];
-    $fileTmpname=$_FILES['workout']['tmp_name'];
-    $fileSize=$_FILES['workout']['size'];
-    $fileError=$_FILES['workout']['error'];
-    $fileType=$_FILES['workout']['type'];
+    $fileName=$_FILES['diet']['name'];
+    $fileTmpname=$_FILES['diet']['tmp_name'];
+    $fileSize=$_FILES['diet']['size'];
+    $fileError=$_FILES['diet']['error'];
+    $fileType=$_FILES['diet']['type'];
 
     $fileExt = explode('.', $fileName);
     $fileActualExt = strtolower(end($fileExt));
@@ -22,9 +22,9 @@ if(isset($_POST['submit'])){
             if ($fileSize < 1000000) {
 
                  $fileNameNew = uniqid('',true).".".$fileActualExt;
-                 $fileDestination = 'workout/'.$fileNameNew;
+                 $fileDestination = 'DietPlan/'.$fileNameNew;
 
-                 $sql="INSERT INTO `workout_plan`(`trn_id`, `wrk_id`, `file_name`) VALUES ('$id','$wrk_id','$fileNameNew')";
+                 $sql="INSERT INTO `diet_plan`(`trn_id`, `diet_id`, `file_name`) VALUES ('$id','$diet_id','$fileNameNew')";
                  $result = mysqli_query($dbcon,$sql);
                  echo mysqli_error($dbcon);
                  

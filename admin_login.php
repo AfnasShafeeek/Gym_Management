@@ -12,7 +12,7 @@
 <body>
  <div class="container">
      <div class="form">
-     <form action = "" method = "post" class="mt-4 p-4 bg-light" >
+     <form action = "admin_login_check.php" method = "post" class="mt-4 p-4 bg-light" >
          <div class="form-group display-3">
            <p><b>LOGIN</b></p>
  
@@ -20,16 +20,16 @@
 
   <div class="form-group">
     <label for="user_name"><h4>USER NAME</h4></label>
-    <input type="text" class="form-control" id="user_name"  placeholder="User name" >  
+    <input type="text" class="form-control" id="user_name" name="uname" placeholder="User name" >  
   </div>
 
   <div class="form-group">
     <label for="Password"><h4>PASSWORD</h4></label>
-    <input type="password" class="form-control" id="Password" placeholder="Password">
+    <input type="password" class="form-control" id="Password" name="pass" placeholder="Password">
   </div>
   <br>
   <br>
-  <button type="submit" class="btn btn-danger btn-lg mx-auto">Submit</button>
+  <button type="submit" class="btn btn-danger btn-lg mx-auto" id="submit" name="submit">Submit</button>
 </form>
      </div>
  </div>

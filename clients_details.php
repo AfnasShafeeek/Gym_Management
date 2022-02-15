@@ -12,7 +12,7 @@
 <body>
 
 <div class="head" align="center"> 
-       <h1>TRAINER DETAILS</h1>
+       <h1>CLIENT DETAILS</h1>
     </div>
     
 <div class="Add m-4 p-4" align="right">
