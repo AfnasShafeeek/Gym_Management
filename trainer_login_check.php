@@ -3,13 +3,12 @@
 
 $conn=mysqli_connect("localhost","root","","gym_management");
 $msg="";
-if (isset($_POST['submit'])){
-  //  $id-$_POST['id'];
+  $id=$_POST['id'];
     $name=$_POST['user_name'];
     $pass=$_POST['password'];
     if($name=='' && $pass==''){
               
-           header("location:admin_login.php");
+           header("location:trainer_login.php");
     }
     else{
             
@@ -26,14 +25,18 @@ if (isset($_POST['submit'])){
 
             else
             {
-                header("location:admin_login.php");
-                echo'<script>alert("faile");</script>';
+                echo'<script>
+                if(confirm("Incorrect Data"))
+                 window.location.replace("trainer_login.php");
+                else
+                window.location.replace("trainer_login.php");
+                </script>';
+                
 
             }
 
     }
 
-}
 
 
 ?>

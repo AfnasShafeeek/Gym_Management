@@ -12,7 +12,7 @@
 <body>
  <div class="container">
      <div class="form">
-     <form action = "clientlogin_check.php" method = "post" class="mt-4 p-4 bg-light" >
+     <form action = "client_login_check.php" method = "post" class="mt-4 p-4 bg-light" >
          <div class="form-group display-3">
            <p><b>LOGIN</b></p>
  
@@ -20,7 +20,7 @@
 
   <div class="form-group"> 
     <label for="id"><h4>ID</h4></label>
-    <input type="text" class="form-control" id="id" value="CLT " placeholder="Client ID" > 
+    <input type="text" class="form-control" id="id" name ="id" value="CLT " placeholder="Client ID" > 
   </div>
 
   <div class="form-group">

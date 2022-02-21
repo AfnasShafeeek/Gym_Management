@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 27, 2022 at 08:48 AM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.6
+-- Generation Time: Feb 21, 2022 at 05:06 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,24 @@ SET time_zone = "+00:00";
 --
 -- Database: `gym_management`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `user_name` varchar(20) NOT NULL,
+  `Password` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`user_name`, `Password`) VALUES
+('admin', '12345');
 
 -- --------------------------------------------------------
 
@@ -70,6 +88,25 @@ INSERT INTO `complaints` (`id`, `complaint`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `diet_plan`
+--
+
+CREATE TABLE `diet_plan` (
+  `trn_id` varchar(20) NOT NULL,
+  `diet_id` varchar(20) NOT NULL,
+  `file_name` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `diet_plan`
+--
+
+INSERT INTO `diet_plan` (`trn_id`, `diet_id`, `file_name`) VALUES
+('TRN 1', 'DIT 1', '6213b836eac3e5.79709739.p');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `trainer_details`
 --
 
@@ -95,6 +132,25 @@ CREATE TABLE `trainer_details` (
 INSERT INTO `trainer_details` (`id`, `name`, `user_name`, `mail`, `password`, `phone`, `age`, `address`, `gender`, `wage`, `acc_num`, `time`) VALUES
 ('TRN 1', 'ghfgfgf', 'ghf', 'gugvgjgu@gmail.com', '1235465', 41851555, 15, 'gfcfgvchvfghjgtgyufrrtftytifgfgttfgtfgkjtgiufur564', 'Male', 120000, 1212121212, 'morning');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `workout_plan`
+--
+
+CREATE TABLE `workout_plan` (
+  `trn_id` varchar(20) NOT NULL,
+  `wrk_id` varchar(20) NOT NULL,
+  `file_name` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `workout_plan`
+--
+
+INSERT INTO `workout_plan` (`trn_id`, `wrk_id`, `file_name`) VALUES
+('TRN 1', 'WRK 1', '6213b5c5d48147.60003555.p');
+
 --
 -- Indexes for dumped tables
 --
@@ -106,10 +162,22 @@ ALTER TABLE `client_details`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `diet_plan`
+--
+ALTER TABLE `diet_plan`
+  ADD PRIMARY KEY (`diet_id`);
+
+--
 -- Indexes for table `trainer_details`
 --
 ALTER TABLE `trainer_details`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `workout_plan`
+--
+ALTER TABLE `workout_plan`
+  ADD PRIMARY KEY (`wrk_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

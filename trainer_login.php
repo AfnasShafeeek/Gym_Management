@@ -12,7 +12,7 @@
 <body>
  <div class="container">
      <div class="form">
-     <form action = "sample_log.php" method = "post" class="mt-4 p-4 bg-light" >
+     <form action = "trainer_login_check.php" method = "post" class="mt-4 p-4 bg-light" >
          <div class="form-group display-3">
            <p><b>LOGIN</b></p>
  

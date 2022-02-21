@@ -13,18 +13,18 @@
     <div class="container">
      <div class="row p-4 m-4">
    
-     <form  action="diet_insert.php" method="POST" name="reg_form" id="reg_form" class="form p-4 pt-4 m-4 mx-auto my-auto"> 
+     <form  action="diet_insert.php" method="POST" name="reg_form" id="reg_form" class="form p-4 pt-4 m-4 mx-auto my-auto" enctype="multipart/form-data"> 
      <div class="header">
         <h1 class="title mx-auto m-4">ADD DIET PLAN</h1>
       </div>
   <div class="form-group p-4">
   <h5>Trainer ID :</h5>
-    <input type="text"class="form-control" id="trn_id" name="trn_id" value="TRN ">
+    <input type="text" class="form-control" id="trn_id" name="trn_id" value="TRN ">
   </div>
 
   <div class="form-group p-4">
     <h5>Plan ID :</h5>
-    <input type="text"class="form-control" id="diet_id" name="diet_id" value="DIT ">
+    <input type="text" class="form-control" id="diet_id" name="diet_id" value="DIT ">
   </div>
 
   <div class="form-group p-4">
