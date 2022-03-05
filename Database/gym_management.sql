@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2022 at 05:06 PM
+-- Generation Time: Mar 05, 2022 at 08:24 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -94,7 +94,7 @@ INSERT INTO `complaints` (`id`, `complaint`) VALUES
 CREATE TABLE `diet_plan` (
   `trn_id` varchar(20) NOT NULL,
   `diet_id` varchar(20) NOT NULL,
-  `file_name` varchar(25) NOT NULL
+  `file_name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -102,7 +102,7 @@ CREATE TABLE `diet_plan` (
 --
 
 INSERT INTO `diet_plan` (`trn_id`, `diet_id`, `file_name`) VALUES
-('TRN 1', 'DIT 1', '6213b836eac3e5.79709739.p');
+('TRN 1', 'DIT 1', '62230cf29f0d55.04159037.pdf');
 
 -- --------------------------------------------------------
 
@@ -141,7 +141,7 @@ INSERT INTO `trainer_details` (`id`, `name`, `user_name`, `mail`, `password`, `p
 CREATE TABLE `workout_plan` (
   `trn_id` varchar(20) NOT NULL,
   `wrk_id` varchar(20) NOT NULL,
-  `file_name` varchar(25) NOT NULL
+  `file_name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -149,7 +149,7 @@ CREATE TABLE `workout_plan` (
 --
 
 INSERT INTO `workout_plan` (`trn_id`, `wrk_id`, `file_name`) VALUES
-('TRN 1', 'WRK 1', '6213b5c5d48147.60003555.p');
+('TRN 1', 'WRK 1', '62230ce754f783.01089246.pdf');
 
 --
 -- Indexes for dumped tables

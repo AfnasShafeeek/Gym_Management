@@ -36,18 +36,24 @@ $(document).ready(function(){
 
                 
             },
-            age:{
-                required:true
-                
-            },
+           
             gender:{
                 required:true
                 
             },
-            fee:{
+            acc_num:{
+                required:true,
+                minlength:10,
+                maxlength:15
+            },
+
+            wage:{
                 required:true,
 
-            },     
+            }, 
+            terms:{
+                required:true
+            }    
             
         },
 

@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diet PLAN</title>
+    <title>DIET PLAN</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
 </head>
-<body  style='background-image: url("https://wallpaperaccess.com/full/1758197.jpg"); background-size: cover; '>
-
+<body style='background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkz-cPZ8yef6PxLod0W8S9hWSRYeE13fdN9Q&usqp=CAU"); background-size: cover; '>
 <div class="container">
-<div align = "center">
+  <div align = "center">
     <h1><b>DIET PLAN</b></h1>
   </div>
-<table class="table  table-bordered pt-4 mt-4">
+<div class="Add m-4 p-4" align="right">
+        <a href="diet_add.php" style="text-decoration: none;">
+    <button class="btn btn-primary btn-lg">Add Plan</button>
+       </a>
+
+       <a href="trainer_home.php" style="text-decoration: none;">
+    <button class="btn btn-success btn-lg">Home</button>
+       </a>
+</div>
+<table class="table table-bordered">
   <thead class="thead-dark">
     <tr>
       <th scope="col">PLAN ID</th>
@@ -32,10 +39,10 @@
         while($row=mysqli_fetch_assoc($result)){
    ?>   
     <tr class="table-light">
-    <td ><?php echo $row['diet_id '];?></td>
-       <td ><?php echo $row['trn_id'];?></td>      
+    <td><?php echo $row['diet_id'];?></td>
+       <td><?php echo $row['trn_id'];?></td>
        <td><a class="btn btn-primary" href=<?php echo "DietPlan/".$row ['file_name'];?> download>Download File</a>
-       </tr>
+    </tr>
     
    <?php } ?>
   </tbody>

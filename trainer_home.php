@@ -77,7 +77,7 @@
 
    <div class="row mt-4 ml-4">
        <div class="col-lg-11 p-3">
-       <a href="workout_veiw.php" style="text-decoration: none;">
+       <a href="trn_workout_view.php" style="text-decoration: none;">
            <div class="details p-2">
             <h2>Workout Plans</h2>
            </div>
@@ -87,7 +87,7 @@
 
    <div class="row mt-4 ml-4">
        <div class="col-lg-11 p-3">
-       <a href="diet_view.php" style="text-decoration: none;">
+       <a href="trn_diet_view.php" style="text-decoration: none;">
            <div class="details p-2">
             <h2>Diet Plans</h2>
            </div>

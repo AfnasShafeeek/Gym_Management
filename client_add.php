@@ -30,50 +30,50 @@
                      <div class="form-group">
 
                      <label for="id" class="label mr-3"> ID :</label>
-                      <input type="text" name="id" class="data" id="id" value="CLT ">
+                      <input type="text" name="id" class="data" id="id" value="CLT " required="">
                      </div>
                      <br>
                    
                      <div class="form-group">
                      <label for="name" class="label"> Name :</label>
-                      <input type="text" name="name" id="name" class="data" placeholder="Full Name">
+                      <input type="text" name="name" id="name" class="data" placeholder="Full Name" required="">
                      </div>
                      <br>
 
                      <div class="form-group">
                      <label for="user_name" class="label" > User Name :</label>
-                      <input type="text" name="user_name" id="user_name" class="data"  placeholder="User Name">
+                      <input type="text" name="user_name" id="user_name" class="data"  placeholder="User Name" required="">
                      
                      </div>
                      <br>
 
                      <div class="form-group">
                         <label for="mail" class="label" >Email address : </label>
-                        <input type="email" class="data" id="mail" name="mail"  placeholder="Enter email">
+                        <input type="email" class="data" id="mail" name="mail"  placeholder="Enter email" required="">
                          
                     </div>
 
                      <div class="form-group">
                      <label for="password" class="label"> Password :</label>
-                      <input type="password" name="password" id="password" class="data" placeholder="Password">
+                      <input type="password" name="password" id="password" class="data" placeholder="Password" required="">
                      </div>
                  `    <br>
 
                      <div class="form-group">
                      <label for="phone" class="label"> Phone Number :</label>
-                      <input type="tel" name="phone" id="phone" class="data" placeholder="Phone">
+                      <input type="tel" name="phone" id="phone" class="data" placeholder="Phone" required="">
                      </div>
                      <br>
 
                      <div class="form-group">
                      <label for="age" class="label"> Age :</label>
-                      <input type="number" name="age" id="age" class="data" placeholder="Age">
+                      <input type="number" name="age" id="age" class="data" placeholder="Age" required="">
                      </div>
                      <br>
 
                      <div class="form-group">
                      <label for="id" class="label"> Address :</label><br>
-                     <textarea id="address" name="address" cols="30" rows="10" placeholder="Full address"></textarea>
+                     <textarea id="address" name="address" cols="30" rows="10" placeholder="Full address" required=""></textarea>
                      </div>
                      <br>
 
@@ -127,5 +127,9 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4569682fd7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="script/register.js"></script>
+
 </body>
 </html>

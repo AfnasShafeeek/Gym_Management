@@ -20,22 +20,23 @@
                
   <div class="form-group">
    <h4>ID</h4>
-    <input type="text" class="form-control" id="id" name="id" aria-describedby="Help" placeholder="ID" value="TRN ">
+    <input type="text" class="form-control" id="id" name="id" aria-describedby="Help" placeholder="ID" value="TRN " required>
     <small id="Help" class="form-text text-muted">Enter ID of trainer to be remove.</small>
   </div>
 
   <div class="form-group">
   <h4>USER NAME</h4>
-    <input type="text" class="form-control" id="u_name" name="u_name" placeholder="User Name">
+    <input type="text" class="form-control" id="u_name" name="u_name" placeholder="User Name" required>
   </div>
 
    <div class="form-group p-3" >
-       <button class="btn btn-danger btn-lg">Remove</button>
+       <button class="btn btn-danger btn-lg" name="remove" id="remove">Remove</button>
     
    </div>  
 </form>
      </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -46,5 +47,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4569682fd7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="script/remove.js"></script>
+  
 </body>
 </html>

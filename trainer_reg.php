@@ -79,8 +79,8 @@
 
                      <div class="form-group">
                   
-                     <label for="gender" class="label"> Male :</label>
-                      <input type="radio" name="gender" id="gender" class="radio"  value="Male">
+                     <label for="gender" class="label" > Male :</label>
+                      <input type="radio" name="gender" id="gender" class="radio"  value="Male" checked>
                       <br>
                       <label for="gender" class="label">Female :</label>
                       <input type="radio" name="gender" id="gender" class="radio" value="Female">
@@ -90,14 +90,14 @@
                     
                      <div class="form-group">
                      <label for="fee" class="label"> Salary :</label>
-                      <input type="text" name="wage" id="wage" class="data" placeholder="">
+                      <input type="text" name="wage" id="wage" class="data" placeholder="" required>
                      </div>
                      <br>
 
                      
                      <div class="form-group">
                      <label for="fee" class="label"> Account Number :</label>
-                      <input type="text" name="acc_num" id="acc_num" class="data" placeholder="Account Number">
+                      <input type="text" name="acc_num" id="acc_num" class="data" placeholder="Account Number" required>
                      </div>
                      <br>
                      
@@ -109,7 +109,7 @@
                       </select>
                      </div>
                      <br>
-                    <input type="checkbox" class="terms" name="terms" id="terms"><label for="terms">Accept all terms and conditon of the health club</label>
+                    <input type="checkbox" class="terms" name="terms" id="terms" required><label for="terms">Accept all terms and conditon of the health club</label>
                     <br>
                     <br>
                     <div class="form-group">
@@ -136,5 +136,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4569682fd7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="script/trn_register.js"></script>
 </body>
 </html>
