@@ -32,7 +32,7 @@
         while($row=mysqli_fetch_assoc($result)){
    ?>   
     <tr class="table-light">
-    <td ><?php echo $row['diet_id '];?></td>
+    <td ><?php echo $row['diet_id'];?></td>
        <td ><?php echo $row['trn_id'];?></td>      
        <td><a class="btn btn-primary" href=<?php echo "DietPlan/".$row ['file_name'];?> download>Download File</a>
        </tr>
