@@ -10,6 +10,9 @@
 </head>
 <body style='background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkz-cPZ8yef6PxLod0W8S9hWSRYeE13fdN9Q&usqp=CAU"); background-size: cover; '>
 <div class="container">
+<div align = "center">
+    <h1><b>WORKOUT PLAN</b></h1>
+  </div>
 <div class="Add m-4 p-4" align="right">
         <a href="workout_form.php" style="text-decoration: none;">
     <button class="btn btn-primary btn-lg">Add Workout</button>
@@ -25,7 +28,7 @@
     <tr>
       <th scope="col">PLAN ID</th>
       <th scope="col">TRAINER ID</th>
-      <th scope="col">DIET PLAN</th>
+      <th scope="col">WORKOUT PLAN</th>
     </tr>
   </thead>
   <tbody>
@@ -39,7 +42,7 @@
     <tr class="table-light">
     <td ><?php echo $row['wrk_id'];?></td>
        <td ><?php echo $row['trn_id'];?></td>      
-       <td><a class="btn btn-primary" href=<?php echo "DietPlan/".$row ['file_name'];?> download>Download File</a>
+       <td><a class="btn btn-primary" href=<?php echo "workout/".$row ['file_name'];?> download>Download File</a>
        </tr>
     
    <?php } ?>
